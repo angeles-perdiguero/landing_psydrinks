@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+/* font-family: 'Creepster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+                                             
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+/* ---> barra <---- */
+
+.barra{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.parte1 img{
+    max-width: 60px;
+}
+
+.options li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.options li a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    filter: drop-shadow(2px 2px 5px #3a3a3a);
+
+}
+
+.options li a:hover{
+    color: red;
+    filter: drop-shadow(2px 2px 5px black);
+}
+
+/* ---> barra <---- */
+
+h2, h3, h4{
+    font-family: 'Creepster', cursive;
+}
+
+p{
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;  
+}
+
+/* ---> hero <---- */
+
+.produ img{
+    filter: drop-shadow(5px 5px 10px rgb(190, 190, 182));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.produ img:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    color: #ffd000;
+    font-family: 'Creepster', cursive;
+    font-size: 9rem;
+    filter: drop-shadow(10px 10px 2px black);
+}
+
+.frase{
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 3px 3px black;
+}
+
+.btn button{
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f52222;
+    font-size: 1.7rem;
+    border: 3px solid;
+    padding: 15px;
+    border-radius: 50%;
+    animation: glowbt 1000ms infinite alternate;
+    filter: drop-shadow(2px 2px 6px #f38b8b);
+}
+
+@keyframes glowbt{
+    from{
+        text-shadow: 0 0 10px #ecdad4,
+                    0 0 10px #faf8f8,
+                    0 0 10px #e2d4cc;
+    }
+    to{
+        text-shadow: 0 0 5px #ecdad4,
+                    0 0 10px #faf8f8,
+                    0 0 15px #e2d4cc;
+    }
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Bebidas2/planeta.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.bloque{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.lado1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ---> hero <---- */
+
+.skewed {
+    position: relative;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background: #030303f3;
+    z-index: -1;
+    transform: skewY(2deg);
+}
+
+/* ---> section 1 <---- */
+
+.historia{
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./Bebidas2/Latas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.relato,
+.idea{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.726);
+    box-shadow: 1px 1px 20px white;
+}
+
+.nose{
+    color: #ccc;
+    flex-basis: 50px;
+    font-size: 2.4rem;
+}
+
+.parra{
+    font-size: 1.3rem;
+}
+
+/* ---> Section 2 <---- */
+
+.descripcion{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+}
+
+.separ{
+    color: white;
+    font-size: 3rem;
+}
+
+.lata1,
+.lata3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+}
+
+.lata2,
+.lata4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 200px;
+}
+
+.zoom img{
+    height: 400px;
+    filter: drop-shadow(5px 5px 10px rgb(5, 5, 5));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.zoom img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px rgb(190, 190, 182));
+}
+
+.desnam{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.726);
+    box-shadow: 1px 1px 20px white;
+    gap: 20px;
+}
+
+.text{
+    color: #ffffff;
+    flex-basis: 0px;
+    font-size: 2rem;
+}
+
+.lorem{
+    font-size: 1.2rem;
+}
+
+.combo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.shadow1{
+    background-image: linear-gradient(45deg, rgba(238, 15, 242, 0.589),rgba(242, 229, 41, 0.644));
+}
+
+.shadow2{
+    background-image: linear-gradient(45deg, rgb(215,12,242, 0.644),rgb(58,7,242, 0.589));
+}
+
+.shadow3{
+    background-image: linear-gradient(45deg, rgb(8,166,92, 0.589),rgb(182,242,53, 0.644));
+}
+
+.shadow4{
+    background-image: linear-gradient(45deg, rgb(7,59,217, 0.589),rgb(242,34,34, 0.644));
+}
+
+/* ---> Section 3 <---- */
+
+.relleno{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;   
+}
+
+.imgen{
+    height: 500px;
+    width: 500px;
+    background-image: url(./Bebidas2/jueces.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 10px white;
+}
+
+.fill p{
+    color: #ffd000;
+    font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    filter: drop-shadow(10px 10px 2px black);
+}
+
+/* ---> Footer <---- */
+
+.despedida{
+    height: 80vh;
+    background-image: url(./Bebidas2/mounstro.jpg);
+    background-size: cover;
+    background-position: center;
+    /* display: flex;
+    align-items: center; */
+}
+
+.lofi{
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 20px;
+}
+
+.lofi h2{
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px #ffd000;
+}
+
+.linkredes{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-list a{
+    color: inherit;
+}
+
+.navfo{
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.navfo:hover{
+    pointer-events: auto;
+}
+
+.social{
+    font-size: 1.5rem;
+    cursor: pointer;
+    pointer-events: auto;
+    color: #000000;
+}
+
+.line {
+    width: 10rem;
+    height: 3px;
+    background-color: #000000;
+    margin-left: 2rem;
+    margin-right: auto;
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.navfo:hover .line {
+    transform: scaleX(1);
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+    margin-inline: 1.2rem;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.nav-item:nth-child(odd) {
+    transform: translateY(5rem);
+}
+.nav-item:nth-child(even) {
+    transform: translateY(-5rem);
+}
+.navfo:hover .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+.nav-link {
+    font-size: 2rem;
+}
+.nav-link i {
+    color: #ececec;
+    transition: color 0.5s;
+}
+.nav-link:hover i.fa-facebook-f {
+    color: #3b5998;
+}
+.nav-link:hover i.fa-twitter {
+    color: #1da1f2;
+}
+.nav-link:hover i.fa-instagram {
+    color: #d839dd;
+}
+
+.infoc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 70px;
+    margin-right: 20rem;
+    margin-top: 5rem;
+}
+
+.baca{
+    margin: 1rem;    
+}
+
+.baca ul{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.baca ul li p{
+    font-size: 1.3rem;
+}
+
+/* ---> bloque copy <---- */
+
+.prope{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
